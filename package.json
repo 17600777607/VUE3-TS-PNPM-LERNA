@@ -15,7 +15,8 @@
     "lerna:version": "lerna version",
     "lerna:publish": "lerna publish",
     "lerna:bootstrap": "lerna bootstrap",
-    "lerna:clean": "lerna clean"
+    "lerna:clean": "lerna clean",
+    "scripts:start": "pnpm --filter @cj/scripts start"
   },
   "dependencies": {
     "@cj/scripts": "workspace:*",

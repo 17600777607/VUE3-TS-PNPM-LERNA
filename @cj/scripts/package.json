@@ -2,14 +2,42 @@
   "name": "@cj/scripts",
   "type": "module",
   "version": "1.0.1",
-  "description": "",
+  "description": "CJ项目的脚本工具库，提供日期、字符串等常用工具函数",
   "main": "index.ts",
+  "types": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --outDir dist",
+    "start": "npm run build && node dist/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "typescript",
+    "utility",
+    "tools",
+    "date",
+    "string"
+  ],
+  "author": {
+    "name": "CJ Team",
+    "email": "team@cj.example.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/17600777607/VUE3-TS-PNPM-LERNA.git",
+    "directory": "@cj/scripts"
+  },
+  "homepage": "https://github.com/17600777607/VUE3-TS-PNPM-LERNA/tree/main/@cj/scripts",
+  "bugs": {
+    "url": "https://github.com/17600777607/VUE3-TS-PNPM-LERNA/issues"
+  },
   "packageManager": "pnpm@10.14.0",
-  "gitHead": "1f6b48f51eea1c714774679534b9a8e3bf8a60a7"
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0"
+  }
 }

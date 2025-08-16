@@ -82,7 +82,14 @@ importers:
         specifier: ^3.0.5
         version: 3.0.5(typescript@5.8.3)
 
-  '@cj/scripts': {}
+  '@cj/scripts':
+    devDependencies:
+      '@types/node':
+        specifier: ^24.0.0
+        version: 24.3.0
+      typescript:
+        specifier: ^5.8.0
+        version: 5.8.3
 
   '@cj/test': {}
 
