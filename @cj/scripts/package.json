@@ -1,0 +1,15 @@
+{
+  "name": "@cj/scripts",
+  "type": "module",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "gitHead": "1f6b48f51eea1c714774679534b9a8e3bf8a60a7"
+}

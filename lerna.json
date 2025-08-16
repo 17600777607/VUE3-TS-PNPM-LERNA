@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "version": "1.0.1",
+  "npmClient": "pnpm",
+  "packages": ["@cj/*"],
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore(release): publish %s",
+      "ignoreChanges": ["**/__tests__/**", "**/*.md", "**/docs/**"]
+    },
+    "version": {
+      "conventionalCommits": true,
+      "message": "chore(release): version %s",
+      "ignoreChanges": ["**/__tests__/**", "**/*.md", "**/docs/**"],
+      "changelogPreset": "angular"
+    }
+  }
+}
