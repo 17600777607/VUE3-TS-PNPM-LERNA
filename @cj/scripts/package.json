@@ -3,13 +3,13 @@
   "type": "module",
   "version": "1.0.1",
   "description": "CJ项目的脚本工具库，提供日期、字符串等常用工具函数",
-  "main": "index.ts",
-  "types": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --outDir dist",
-    "start": "npm run build && node dist/index.js"
+    "build": "node build.js",
+    "start": "node dist/index.js"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "keywords": [
     "typescript",
     "utility",

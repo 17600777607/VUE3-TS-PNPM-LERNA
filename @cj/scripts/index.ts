@@ -17,15 +17,15 @@ async function main() {
     // 演示API功能
     const { test } = await import('./src/api/index.js');
     const result = test('Hello from @cj/scripts');
-    
+
     console.log('@cj/scripts API测试结果:');
     console.log(result);
-    
+
     // 演示Test工具功能
     const { assert, timeExecution } = await import('./src/test/index.js');
     const assertResult = assert(1 + 1 === 2, '1+1 should equal 2');
     console.log('断言测试结果:', assertResult);
-    
+
     const timingResult = timeExecution(() => {
       // 模拟耗时操作
       let sum = 0;
@@ -35,7 +35,7 @@ async function main() {
       return sum;
     }, '耗时计算测试');
     console.log('计时测试结果:', timingResult);
-    
+
     // 格式化当前时间并显示
     const now = new Date();
     console.log(`当前时间: ${now.toLocaleString('zh-CN')}`);
